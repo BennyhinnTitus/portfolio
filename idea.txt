@@ -1,0 +1,29 @@
+Portfolio Flow (Single Web Page):
+    1. Home:
+        1.1 Name
+        1.2 Role
+        1.3 Quick Introduction
+        1.4 Navbar
+        1.5 Links
+    
+    2. Skills:
+        2.1 Technical skills (Programming languages and Frameworks)
+        2.2 Tools (Cybersecurity)
+    
+    3. Projects:
+        3.1 Nutrition Tracker
+        3.2 Movie Search Engine
+        3.3 Tenzies
+        3.4 Meme Generator
+        3.5 Assembly Endgame
+    
+    4. Contact:
+        4.1 Name
+        4.2 Email
+        4.3 Message
+        4.4 Others (LinkedIn, Email, X, etc.,)
+    
+    5. About:
+        5.1 Resume
+        5.2 My Description
+        5.2 Eye Catchy Things
