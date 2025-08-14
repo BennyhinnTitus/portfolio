@@ -1,3 +1,5 @@
+/* NavBar */
+
 .NavBar {
     display: flex;
     align-items: center;
@@ -15,8 +17,9 @@
 }
 
 .logo {
+    padding-top: 10px;
     padding-left: 30px;
-    height: 65px;
+    height: 110px;
     display: block;
 }
 
@@ -40,4 +43,37 @@
 
 .btn:hover {
     text-decoration: underline;
+    text-decoration-color: rgba(97, 32, 172, 1);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* Home */
+
+.Home {
+    padding-top: 100px;
+    display: flex;
+    border: 1px solid black;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.animation-container {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.link-btn {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.name {
+    text-align: center;
 }
