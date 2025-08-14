@@ -1,10 +1,6 @@
-import NavBar from "./NavBar"
-
 const Home = () => {
     return (
-        <div className="Home">
-            <NavBar />
-        </div>
+        <div className="Home"></div>
     )
 }
 
