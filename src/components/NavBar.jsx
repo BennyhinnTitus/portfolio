@@ -2,7 +2,7 @@ const NavBar = () => {
     return (
         <div className="NavBar">
             <div className="logo-container">
-                <img className="logo" src="/coding-icon.png" alt="coding icon" />
+                <img className="logo" src="/laptop.gif" alt="Laptop and coffee levitating" />
             </div>
             <div className="btn-container">
                 <button className="btn">Home</button>
