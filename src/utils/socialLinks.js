@@ -10,6 +10,10 @@ const socialLinks = [
   {
     icon: ['fab', 'square-x-twitter'],
     path: "https://x.com/Bennyhinn_Titus"
+  },
+  {
+    icon: ['fab', 'square-whatsapp'],
+    path: "https://wa.me/8148805661?text=Hello%20Bennyhinn%20Titus,%20"
   }
 ]
 

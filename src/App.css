@@ -58,18 +58,16 @@
 }
 
 .content {
-    padding-top: 215px;
+    padding-top: 225px;
     display: flex;
     flex-direction: column;
     width: 35%;
-    /* border: 1px solid black; */
 }
 
 .animation-container {
-    padding-top: 170px;
-    padding-left: 30px;
+    padding-top: 180px;
+    padding-left: 45px;
     width: 30%;
-    /* border: 1px solid black; */
 }
 
 .link-btn {
@@ -97,3 +95,4 @@
 .content span, p{
     padding-left: 6px;
 }
+

@@ -27,7 +27,7 @@ const Home = () => {
                 <span className="first-name">Bennyhinn</span>
                 <span className="last-name">Titus</span>
                 <span className='role'>Security Engineer | Web Developer</span>
-                <p className="intro">I'm a Cybersecurity undergraduate with a passion for crafting secure, modern web experiences. I love turning ideas into interactive websites and constantly exploring new tech to sharpen my skills.</p>
+                <p className="intro">I'm a CYS undergraduate passionate about building secure, modern web experiences and turning ideas into interactive sites while exploring new tech to enhance my skills.</p>
                 <div className="links-container">{mappedSocialLinks}</div>
             </div>
             <div className="animation-container">
