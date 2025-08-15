@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import socialLinks from '../utils/socialLinks';
+import Lottie from 'lottie-react';
+import coding from '../coding';
 
 const Home = () => {
     const mappedSocialLinks = socialLinks.map(link => {
@@ -22,12 +24,18 @@ const Home = () => {
     return (
         <div className="Home">
             <div className="content">
-                <span className="name">Bennyhinn Titus D</span>
-                <span>Security Engineer | Web Developer</span>
+                <span className="first-name">Bennyhinn</span>
+                <span className="last-name">Titus</span>
+                <span className='role'>Security Engineer | Web Developer</span>
                 <p className="intro">I'm a Cybersecurity undergraduate with a passion for crafting secure, modern web experiences. I love turning ideas into interactive websites and constantly exploring new tech to sharpen my skills.</p>
                 <div className="links-container">{mappedSocialLinks}</div>
             </div>
-            <div className="animation-container">Can't find an animation...</div>
+            <div className="animation-container">
+                <Lottie 
+                    animationData={coding} 
+                    loop={true}
+                />
+            </div>
         </div>
     )
 }
