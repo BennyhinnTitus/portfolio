@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import socialLinks from '../utils/socialLinks';
 import Lottie from 'lottie-react';
-import coding from '../coding';
+import codingAnimation from '../utils/codingAnimation';
 
 const Home = () => {
     const mappedSocialLinks = socialLinks.map(link => {
@@ -15,7 +15,7 @@ const Home = () => {
                 icon={link.icon}
                 shake
                 size='2x'
-                style={{ color: "rgb(97, 32, 172)" }}
+                style={{ color: "rgb(122, 42, 214)" }}
             />
         </button>
         )
@@ -32,7 +32,7 @@ const Home = () => {
             </div>
             <div className="animation-container">
                 <Lottie 
-                    animationData={coding} 
+                    animationData={codingAnimation} 
                     loop={true}
                 />
             </div>
