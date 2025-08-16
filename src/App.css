@@ -9,6 +9,8 @@
     width: 100%;
     box-shadow: 0px 3px 10px rgb(233, 233, 233);
     font-family: 'Poppins', sans-serif;
+    background-color: white;
+    z-index: 1;
 }
 
 .logo-container {
@@ -20,7 +22,6 @@
 .logo {
     padding-top: 10px;
     padding-left: 30px;
-    height: 110px;
     display: block;
 }
 
@@ -44,7 +45,7 @@
 
 .btn:hover {
     text-decoration: underline;
-    text-decoration-color: rgba(97, 32, 172, 1);
+    text-decoration-color: rgb(114, 39, 200);
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
 }
@@ -55,6 +56,8 @@
     display: flex;
     justify-content: center;
     column-gap: 30px;
+    padding-bottom: 150px;
+    background-color: rgb(245, 245, 245);
 }
 
 .content {
@@ -73,7 +76,7 @@
 .link-btn {
     border: none;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     padding: 0px;
     padding-right: 12px;
 }
@@ -94,5 +97,102 @@
 
 .content span, p{
     padding-left: 6px;
+}
+
+/* About */
+
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    background-color: rgb(245, 245, 245);
+}
+
+.title {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.follow-up {
+    color: rgb(55, 55, 55);
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    /* column-gap: 30px; */
+    margin-top: 55px;
+}
+
+.about-animation {
+    width: 30%;
+    margin-right: 90px;
+    /* border: 1px solid black; */
+}
+
+.actual-content {
+    /* margin-left: 60px; */
+    width: 35%;
+    /* border: 1px solid black; */
+}
+
+.display-cards {
+    display: flex;
+    gap: 20px;
+    padding-left: 6px;
+}
+
+.card {
+    background-color: white;
+    padding: 10px;
+    height: 120px;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 0px 2px rgb(114, 39, 200);
+}
+
+.card-title {
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.card-follow-up {
+    font-size: small;
+    color: rgb(55, 55, 55);
+    padding-top: 8px;
+    padding-bottom: 8px;  
+}
+
+.desc {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.download-resume {
+    background-color: rgb(114, 39, 200);
+    color: white;
+    font-size: medium    ;
+    padding: 17px;
+    padding-left: 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.download-resume:hover {
+    background-color: rgb(122, 42, 214);
+}
+
+.download-resume:active {
+    transform: scale(0.95);
 }
 

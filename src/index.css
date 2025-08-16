@@ -1,10 +1,16 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     margin: 0px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(20, 20, 20);
+    color: rgb(0, 0, 0);
+}
+
+body::selection {
+    background-color: rgb(114, 39, 200);
+    color: white;
 }
 
