@@ -1,9 +1,15 @@
-import { FaPython, FaJava, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";
-import C from "../utils/c-lang.png";
-
+import { programmingLanguages } from "../utils/skillsData"
 
 const Skills = () => {
+    const mappedSkills = programmingLanguages.map((lang, index) => {
+        return (
+            <div className="prog-lans">
+                {lang.icon}
+                <span className="prog-name">{lang.name}</span>
+            </div>
+        )
+    })
+
     return (
         <div className="Skills">
             <span className="title">Skills</span>
@@ -14,30 +20,7 @@ const Skills = () => {
                     <div className="inner-box">
                         <span className="box-name">Programming Languages</span>
                         <div className="actual-skills">
-                            <div className="prog-lans">
-                                <FaPython color="rgb(114, 39, 200)" size={23}/>
-                                <span className="prog-name">Python</span>
-                            </div>
-                            <div className="prog-lans">
-                                <FaJava color="rgb(114, 39, 200)" size={25}/>
-                                <span className="prog-name">Java</span>
-                            </div>
-                            <div className="prog-lans">
-                                <FaHtml5 color="rgb(114, 39, 200)" size={25}/>
-                                <span className="prog-name">HTML</span>
-                            </div>
-                            <div className="prog-lans">
-                                <FaCss3Alt color="rgb(114, 39, 200)" size={25}/>
-                                <span className="prog-name">CSS</span>
-                            </div>
-                            <div className="prog-lans">
-                                <RiJavascriptFill color="rgb(114, 39, 200)" size={25}/>
-                                <span className="prog-name">JavaScript</span>
-                            </div>
-                            <div className="prog-lans">
-                                <img className="c" src={C} alt="" />
-                                <span className="prog-name">C</span>
-                            </div>
+                            {mappedSkills}
                         </div>
                     </div>
                     <div className="inner-box">
