@@ -13,10 +13,11 @@
     z-index: 1;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sur-name-p {
+    padding-left: 35px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .logo {
@@ -41,13 +42,24 @@
     cursor: pointer;
     margin-inline: 15px;
     font-size: 15px;
+    position: relative;
 }
 
-.btn:hover {
-    text-decoration: underline;
-    text-decoration-color: rgb(114, 39, 200);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 88%;
+    height: 2px;
+    background-color: rgb(114, 39, 200);
+    transition: transform 0.3s ease;
+}
+
+.btn:hover::after {
+    transform: translateX(-50%) scaleX(1);
 }
 
 /* Home */
@@ -61,6 +73,7 @@
 }
 
 .content {
+    /* border: 1px solid black; */
     padding-top: 225px;
     display: flex;
     flex-direction: column;
@@ -68,6 +81,7 @@
 }
 
 .animation-container {
+    /* border: 1px solid black; */
     padding-top: 180px;
     padding-left: 45px;
     width: 30%;

@@ -1,22 +1,9 @@
-import Lottie from 'lottie-react';
-import laptopAnimation from '../utils/laptopAnimation';
-
 const NavBar = () => {
-    const styles = { 
-        height: 170, 
-        width: 170, 
-        paddingTop: 10, 
-        paddingLeft: 30 
-    }
 
     return (
         <div className="NavBar">
-            <div className="logo-container"> 
-                <Lottie 
-                    animationData={laptopAnimation} 
-                    loop={true}
-                    style={styles} 
-                />
+            <div className="sur-name"> 
+                <p className="sur-name-p">Titus</p>
             </div>
             <div className="btn-container">
                 <button className="btn">Home</button>
