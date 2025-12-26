@@ -1,9 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import socialLinks from '../utils/socialLinks';
 import Lottie from 'lottie-react';
-import codingAnimation from '../utils/codingAnimation';
+import laptopAnimation from '../utils/laptopAnimation';
 
 const Home = () => {
+    const styles = { 
+        height: 510, 
+        width: 510, 
+        paddingBottom: 30,
+    }
+
     const mappedSocialLinks = socialLinks.map(link => {
         return (
         <button 
@@ -32,8 +38,9 @@ const Home = () => {
             </div>
             <div className="animation-container">
                 <Lottie 
-                    animationData={codingAnimation} 
+                    animationData={laptopAnimation} 
                     loop={true}
+                    style={styles} 
                 />
             </div>
         </div>
