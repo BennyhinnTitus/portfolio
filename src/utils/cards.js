@@ -5,7 +5,7 @@ const cards = [
     },
     {
         title: "Hackathon",
-        followUp: "Participated in Adobe India"
+        followUp: "Won Smart India Hackathon 2025"
     },
     {
         title: "Internship",

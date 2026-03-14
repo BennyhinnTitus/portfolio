@@ -36,7 +36,7 @@ const About = () => {
                     <div className="display-cards">
                         {mappedCards}
                     </div>
-                    <p className="desc">I'm Titus — a Cybersecurity and Web Development enthusiast skilled in Python, JavaScript, and React. I build secure, user-friendly solutions, blending design with resilience. Curious and adaptable, I keep learning to grow as a tech professional and value teamwork and clear communication.</p>
+                    <p className="desc">I have participated in hackathons, CTFs, and competitive programming, building faster adaptive and learning skills through real problem solving. I focus on experiencing new technologies to contribute and build live projects and applications. I seek opportunities to collaborate, innovate, and build impactful solutions.</p>
                     <button 
                         onClick={() => {window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")}} 
                         className="download-resume"

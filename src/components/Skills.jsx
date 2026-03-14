@@ -1,47 +1,46 @@
-import { programmingLanguages } from "../utils/skillsData"
+import { 
+  programmingLanguages, 
+  frameworks, 
+  databases, 
+  technicalConcepts, 
+  cybersecurityTools 
+} from "../utils/skillsData"
 
 const Skills = () => {
-    const mappedSkills = programmingLanguages.map((lang, index) => {
-        return (
-            <div className="prog-lans">
-                {lang.icon}
-                <span className="prog-name">{lang.name}</span>
-            </div>
-        )
-    })
+  const skillCategories = [
+    { title: "Programming Languages", skills: programmingLanguages },
+    { title: "Frameworks & Libraries", skills: frameworks },
+    { title: "Databases", skills: databases },
+    { title: "Technical Concepts", skills: technicalConcepts },
+    { title: "Cybersecurity Tools", skills: cybersecurityTools },
+  ];
 
+  const renderSkillItem = (skill) => {
+    const hasIcon = !!skill.icon;
     return (
-        <div className="Skills">
-            <span className="title">Skills</span>
-            <span className="follow-up">Tools and Technologies</span>
-            <div className="skills-container">
-                <span className="txt">Technical Skills</span>
-                <div className="outter-box">
-                    <div className="inner-box">
-                        <span className="box-name">Programming Languages</span>
-                        <div className="actual-skills">
-                            {mappedSkills}
-                        </div>
-                    </div>
-                    <div className="inner-box">
-                        <span className="box-name">Frameworks</span>
-                        <div className="actual-skills"></div>
-                    </div>
-                </div>
-                <span className="txt">Tools</span>
-                <div className="outter-box">
-                    <div className="inner-box">
-                        <span className="box-name">Cybersecurity Tools</span>
-                        <div className="actual-skills"></div>
-                    </div>
-                    <div className="inner-box">
-                        <span className="box-name">Developer Tools</span>
-                        <div className="actual-skills"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div key={skill.name} className={`skill-item ${!hasIcon ? 'no-icon' : ''}`}>
+        {skill.icon && <span className="skill-icon">{skill.icon}</span>}
+        <span className="skill-label">{skill.name}</span>
+      </div>
     )
+  }
+
+  return (
+    <div className="Skills">
+      <span className="title">Skills</span>
+      <span className="follow-up">Tools and Technologies</span>
+      <div className="skills-wrapper">
+        {skillCategories.map((category, idx) => (
+          <div key={idx} className="skill-category">
+            <h3 className="category-title">{category.title}</h3>
+            <div className="skills-grid">
+              {category.skills.map((skill) => renderSkillItem(skill))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default Skills

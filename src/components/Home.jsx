@@ -32,8 +32,8 @@ const Home = () => {
             <div className="content">
                 <span className="first-name">Bennyhinn</span>
                 <span className="last-name">Titus</span>
-                <span className='role'>Security Engineer | Web Developer</span>
-                <p className="intro">I'm a CYS undergraduate passionate about building secure, modern web experiences and turning ideas into interactive sites while exploring new tech to enhance my skills.</p>
+                <span className='role'>Cyber Enthusiast | Full Stack Web Developer</span>
+                <p className="intro">I’m a Cybersecurity student passionate about turning ideas into secure, modern web experiences and building robust backend systems that power real-world applications.</p>
                 <div className="links-container">{mappedSocialLinks}</div>
             </div>
             <div className="animation-container">
