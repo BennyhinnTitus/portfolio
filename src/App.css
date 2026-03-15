@@ -122,6 +122,7 @@
     justify-content: center;
     padding-bottom: 60px;
     background-color: rgb(245, 245, 245);
+    border: 1px solid black;
 }
 
 .title {
@@ -217,7 +218,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 35px;
     background-color: rgb(245, 245, 245);
 }
 
@@ -225,7 +226,7 @@
     display: flex;
     justify-content: center;
     /* dont change with margin-top value! */
-    margin-top: 70px;
+    margin-top: 55px;
     width: 100%;
     /* gap: 20px; */
 }
@@ -252,9 +253,9 @@
     font-size: 16px;
     font-weight: 500;
     margin: 0;
+    margin-bottom: 5px;
     min-height: 24px;
-    padding-bottom: 20px;
-    color: rgb(55, 55, 55);
+    padding-bottom: 30px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -262,13 +263,13 @@
 .skills-display-cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 25px;
+    row-gap: 35px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     min-height: 260px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     transition: opacity 0.3s ease;
 }
 
