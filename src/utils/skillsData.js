@@ -1,4 +1,4 @@
-import { FaPython, FaJava, FaReact, FaDatabase } from "react-icons/fa";
+import { FaPython, FaJava, FaReact, FaDatabase, FaCode, FaLightbulb, FaNetworkWired, FaShieldAlt, FaWrench, FaGlobe } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiDjango, SiNodedotjs, SiExpress, SiMongodb, SiSqlite, SiPostgresql } from "react-icons/si";
 import C from "../utils/c-lang.png";
@@ -25,15 +25,15 @@ export const databases = [
 ];
 
 export const technicalConcepts = [
-  { name: "Data Structures & Algorithms" },
-  { name: "Object Oriented Programming" },
-  { name: "Problem Solving" },
-  { name: "System Design" },
+  { name: "DSA", icon: <FaCode color="rgb(114, 39, 200)" size={24} /> },
+  { name: "OOP", icon: <FaNetworkWired color="rgb(114, 39, 200)" size={24} /> },
+  { name: "Problem Solving", icon: <FaLightbulb color="rgb(114, 39, 200)" size={24} /> },
+  { name: "System Design", icon: <FaGlobe color="rgb(114, 39, 200)" size={24} /> },
 ];
 
 export const cybersecurityTools = [
-  { name: "Nmap" },
-  { name: "Wireshark" },
-  { name: "Metasploit" },
-  { name: "Burp Suite" },
+  { name: "Nmap", icon: <FaNetworkWired color="rgb(114, 39, 200)" size={24} /> },
+  { name: "Wireshark", icon: <FaShieldAlt color="rgb(114, 39, 200)" size={24} /> },
+  { name: "Metasploit", icon: <FaShieldAlt color="rgb(114, 39, 200)" size={24} /> },
+  { name: "Burp Suite", icon: <FaWrench color="rgb(114, 39, 200)" size={24} /> },
 ];
